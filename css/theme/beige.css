@@ -5,6 +5,7 @@
  */
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600&display=swap>);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -50,11 +51,10 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "Monserrat", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
