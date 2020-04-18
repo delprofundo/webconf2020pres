@@ -10,3 +10,19 @@
     color: green;
 
 }
+
+#left {
+    left: -8.33%;
+    text-align: left;
+    float: left;
+    width: 50%;
+    z-index: -10;
+}
+
+#right {
+    left: 31.25%;
+    text-align: right;
+    float: right;
+    width: 50%;
+    z-index: -10;
+}
