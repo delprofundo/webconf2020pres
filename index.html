@@ -172,87 +172,188 @@
 							<li>open source all the way down.</li>
 						</ul>
 					</section>
+				</section>
 				<section>
-					<section data-markdown>
-						<textarea data-template>
-							### What is a deployment chassis?
-
-							the deployment chassis answers the following questions
-
+					<section>
+						<h3>themes</h3>
+						<div>
 							<ul>
-								<li>how do we arrange code, config and resources?</li>
-								<li>how do we apply developer tools?</li>
-								<li>how do we enable integration and deployment workflows?</li>
-								<li>how do we destructure our problem domain?</li>
+								<li class="notlit">business and operational benefits and implications</li>
+								<li class="highlit">what is a chassis</li>
+								<li class="notlit">key architectural concerns</li>
+								<li class="notlit">technical demonstration</li>
 							</ul>
-						</textarea>
+						</div>
 					</section>
-					<section data-markdown>
-						### Arranging code, configuration and resources
-					</section>
-					<section data-markdown>
-						### developer tools
-					</section>
-					<section data-markdown>
-						### deployment tools
-					</section>
-					<section data-markdown>
-						### relationship to software architecture
-						#### Domains and bounded contexts
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						### use cases and examples
+					<section>
 
-						- platform tools
-							- usually event driven
-							- operational or supportive
-						- web application and business workloads
-						- destructuring poorly designed solutions
-					</section>
-					<section data-markdown>
-						### Example Platform Tool
-						#### Service Usage Monitor
-					</section>
-					<section data-markdown>
-						### Example Web Application workload
-						#### Card tokenisation microservice
-					</section>
-					<section data-markdown>
-						### Example of destructuring a poorly designed solution
-						#### Expensive forms and bus
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						### consequences
+						<h3>deployment chasis - what and why?</h3>
 
-						- developers become operations
-						- difficult to navigate enterprise design authorities
-						- true pay as you go
-							- 2 - 3 orders of magnitude cost savings
-						- demands solid domain design
-					</section>
-				</section>
-				<section>
-					<section data-markdown>
-						### feedback
 
-						- introduce simpler integration patterns
-						- enterprise does not like javascript
-						- but security and operations love it!
+						the deployment chassis answers the following questions
+
+						<ul>
+							<li>how do we arrange code, config and resources?</li>
+							<li>how do we apply developer tools?</li>
+							<li>how do we enable integration and deployment workflows?</li>
+							<li>debug and test</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Arranging code, configuration and resources</h3>
+
+						<ul>
+							<li>resources</li>
+							<li>configuration</li>
+							<li>functions</li>
+							<li>deployment tools</li>
+						</ul>
+					</section>
+					<section>
+						<h3>resources</h3>
+
+						<ul>
+							<li>infrastructure as code definitions</li>
+							<li>represent platform software components</li>
+							<li>granular policy based access</li>
+						</ul>
+					</section>
+					<section>
+						<h3>configuration</h3>
+
+						<ul>
+							<li>the glue - serverless.yml</li>
+							<li>environment configuration</li>
+							<li>populating environment configuration</li>
+						</ul>
+					</section>
+					<section>
+						<h3>deployment tools</h3>
+
+						<ul>
+							<li>packager: webpack or parcel</li>
+							<li>script engine: npm</li>
+							<li>deployment tool: circle</li>
+						</ul>
+						<p>all js and yaml</p>
+					</section>
+					<section>
+						<h3>debug and test</h3>
+
+						<ul>
+							<li>cloud dogfood: use platform tools</li>
+							<li>unit testing and tracing</li>
+							<li>live replica per developer</li>
+						</ul>
+					</section>
+					<section>
+						<h3>cloudfood : use platform tools</h3>
+
+						<ul>
+							<li>dashbird</li>
+							<li>cloud provider monitoring tools</li>
+							<li>advanced tracing - honecomb.io</li>
+						</ul>
+					</section>
+					<section>
+						<h3>unit testing and tracing</h3>
+
+						<ul>
+							<li>standard unit testing at module level</li>
+							<li>tracing and observability</li>
+						</ul>
+					</section>
+					<section>
+						<h3>live account development</h3>
+
+						<ul>
+							<li>per user and per stage independent accounts</li>
+							<li>policy guardrails, logging and monitoring appied</li>
+							<li>compliance testing applied</li>
+						</ul>
 					</section>
 				</section>
 				<section>
-					<section data-markdown>
-						### takeaways
+					<section>
+						<h3>themes</h3>
+						<div>
+							<ul>
+								<li class="notlit">business and operational benefits and implications</li>
+								<li class="notlit">what is a chassis</li>
+								<li class="highlit">key architectural concerns</li>
+								<li class="notlit">technical demonstration</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3>architecture driven engineering</h3>
+
+						<ul>
+							<li>everything is abstracted</li>
+							<li>this is the catch</li>
+							<li>discipline required</li>
+						</ul>
+					</section>
+					<section>
+						<h3>serverless</h3>
+						<h4>driven by good architecture</h4>
+						<ul>
+							<li>good design all the way down<li>
+							<li>event driven/stateless</li>
+							<li>different type of coupling</li>
+							<li>exmaples</li>
+						</ul>
+					</section>
+					<section>
+						<h3>design all the way down</h3>
+						<ul>
+							<li>discovery: event storming</li>
+							<li>domain driven design</li>
+							<li>REST(like) api's</li>
+							<li>cloud native patterns</li>
+						</ul>
+					</section>
+					<section>
+						<h3>event driven</h3>
+						<ul>
+						</ul>
+						<p>user feedback</p>
+					</section>
+					<section>
+						<h3>stateless</h3>
+						<ul>
+						</ul>
+					</section>
+					<section>
+						<h3>different type of coupling</h3>
+						<ul>
+						</ul>
+					</section>
+					<section>
+						<h3>use cases / examples</h3>
+						<ul>
+							<li>static web app distribution</li>
+							<li>decompose a faulty monolith</li>
+							<li></li>
+						</ul>
 					</section>
 				</section>
 				<section>
-					<section data-markdown>
-						### detailed demo and review
-					</section>
+					<h3>themes</h3>
+					<div>
+						<ul>
+							<li class="notlit">business and operational benefits and implications</li>
+							<li class="notlit">what is a chassis</li>
+							<li class="notlit">key architectural concerns</li>
+							<li class="highlit">technical demonstration</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>takeaways</h3>
+				</section>
+				<section>
+					<h3>q&a</h3>
 				</section>
 			</div>
 		</div>
