@@ -83,93 +83,95 @@
 
 
 				</section>
-				<section data-markdown>
-					### themes
-
-					- business and operational benefits and implications
-					- what is a chassis
-					- key architectural concerns
-					- technical demonstration periodically
-				</section>
 				<section>
-					<h3>our example - generic banc</h3>
-
+					<h3>themes</h3>
 					<div>
-						<img src=""
+						<ul>
+							<li>business and operational benefits and challenges</li>
+							<li>what is a chassis</li>
+							<li>key architectural concerns</li>
+							<li>technical demonstration</li>
+						</ul>
 					</div>
-
 				</section>
 				<section>
-					<section data-markdown>
-						<textarea data-template>
-							### Event Driven Serverless in 30 seconds
+					<h3>our example - bank generic</h3>
 
-							ok maybe five minutes <!-- .element: class="fragment" -->
-
-							<ul>
-								<li>business and operational implications</li>
-								<li>architecture driven</li>
-								<li>the cost of doing serverless business</li>
-							</ul>
-
-						</textarea>
-					</section>
-					<section data-markdown>
-						### business and operational implications
-
-						#### extreme cost reduction
-					</section>
-					<section data-markdown>
-						### business and operational implications
-
-						#### Dev === Prod
-					</section>
-					<section data-markdown>
-						### business and operational implications
-
-						#### resource policies must exist
-					</section>
-					<section data-markdown data-background-image="https://gph.is/1a4YOxQ">
-						### serverless - architecture driven
-
-						#### Functions and Infra as Code
-					</section>
-					<section data-markdown>
-						### serverless - architecture driven
-
-						#### Stateless-ness...
-					</section>
-					<section data-markdown>
-						### serverless - architecture driven
-
-						#### ...required to handle event driven approaches
-					</section>
-					<section data-markdown>
-						### serverless - architecture driven
-
-						#### open source all the way down
-					</section>
-					<section data-markdown>
-						### the cost of doing business
-
-						#### Extreme resource abstraction
-					</section>
-					<section data-markdown>
-						### the cost of doing business
-
-						#### a different type of coupling
-					</section>
-					<section data-markdown>
-						### the cost of doing business
-
-						#### testing and debugging options
-					</section>
-					<section data-markdown>
-						### the cost of doing business
-
-						#### plan for multi-tenancy
-					</section>
+					<div class="stretch">
+						<img src="img/gCardArchitecture.png"/>
+					</div>
 				</section>
+				<section>
+					<h3>our example - banc generic</h3>
+					<h4> focus</h4>
+
+					<div  class="stretch">
+						<img src="img/gCardArchitecture_focus.png"/>
+						<p>deploy the base services (orange)</p>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3>themes</h3>
+						<div>
+							<ul>
+								<li class="highlit">business and operational benefits and implications</li>
+								<li class="notlit">what is a chassis</li>
+								<li class="notlit">key architectural concerns</li>
+								<li class="notlit">technical demonstration</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h3>benefits</h3>
+
+						<ul>
+							<li>true pay as you go - orders of magnitude savings</li>
+							<li>favourable shift in responsibility exposure</li>
+							<li>low ops - development becomes operations</li>
+						</ul>
+					</section>
+					<section>
+						<h3>true pay as you go</h3>
+
+						<div class="stretch">
+							<img src="img/abstraction_plus_costs.png"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>favourable shift in shared responsibility</h3>
+
+						<div class="stretch">
+							<p>increased abstraction means less management</p>
+							<img src="img/shared_sec.PNG"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>low ops</h3>
+
+						<ul>
+							<li>nothing but application code to manage</li>
+							<li>automate builds from test enabled repository</li>
+							<li>simple declarative security per application</li>
+							<li>environments deployed from templates with guardrails</li>
+						</ul>
+					</section>
+					<section>
+						<h3>development becomes operations</h3>
+
+					</section>
+					<section>
+						<h3>challenges</h3>
+
+						<ul>
+							<li>horrify your friends in the enterprise DA</li>
+							<li>but dont worry, devOps and secOps will come to love you</li>
+							<li>enterprise doesnt like javascript</li>
+							<li>open source all the way down.</li>
+						</ul>
+					</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template>

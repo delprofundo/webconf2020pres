@@ -26,3 +26,12 @@
     width: 50%;
     z-index: -10;
 }
+
+.highlit {
+    font-weight: bolder;
+}
+
+.notlit {
+    font-weight: lighter;
+    color: #8f8f8f;
+}
