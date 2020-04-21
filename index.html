@@ -93,7 +93,7 @@
 					<div>
 						<ul>
 							<li>business and operational benefits and challenges</li>
-							<li>what is a chassis</li>
+							<li>chassis deep dive</li>
 							<li>key architectural concerns</li>
 							<li>technical demonstration</li>
 						</ul>
@@ -121,7 +121,7 @@
 						<div>
 							<ul>
 								<li class="highlit">business and operational benefits and challenges</li>
-								<li class="notlit">what is a chassis</li>
+								<li class="notlit">chassis deep dive</li>
 								<li class="notlit">key architectural concerns</li>
 								<li class="notlit">technical demonstration</li>
 							</ul>
@@ -134,7 +134,24 @@
 							<li>true pay as you go - orders of magnitude savings</li>
 							<li>favourable shift in responsibility exposure</li>
 							<li>low ops - development becomes operations</li>
+							<li>extreme cadence</li>
 						</ul>
+					</section>
+					<section>
+						<h3>true pay as you go</h3>
+
+						<div class="stretch">
+							<img src="img/abstraction_plus_costs_no_costs.png"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>true pay as you go</h3>
+
+						<div class="stretch">
+							<img src="img/abstraction_plus_costs_nodelta.png"/>
+							<p></p>
+						</div>
 					</section>
 					<section>
 						<h3>true pay as you go</h3>
@@ -164,6 +181,13 @@
 						</ul>
 					</section>
 					<section>
+						<h3>extreme cadence</h3>
+						<ul>
+							<li>all this abstraction brings the dev team to the edge of production</li>
+						</ul>
+
+					</section>
+					<section>
 						<h3>challenges</h3>
 
 						<ul>
@@ -173,14 +197,17 @@
 							<li>open source all the way down.</li>
 						</ul>
 					</section>
+					<section>
+						<h3>questions</h3>
+					</section>
 				</section>
 				<section>
 					<section>
 					<h3>themes</h3>
 					<div>
 						<ul>
-							<li class="notlit">business and operational benefits and implications</li>
-							<li class="highlit">what is a chassis</li>
+							<li class="notlit">business and operational benefits and challenges</li>
+							<li class="highlit">chassis deep dive</li>
 							<li class="notlit">key architectural concerns</li>
 							<li class="notlit">technical demonstration</li>
 						</ul>
@@ -244,7 +271,7 @@
 					</section>
 					<section>
 						<h3>serverless.yml - the glue</h3>
-						<!--- todo: add diagram combining resources and functions ---!>
+						<!--- todo: add diagram combining resources and functions -->
 					</section>
 					<section>
 						<h3>environment configuration</h3>
@@ -273,7 +300,7 @@
 					<section>
 						<h3>serverless + webpack or parcel</h3>
 						<div class="stretch">
-							<img src="img/"/>
+							<img src="img/serverless_top.png"/>
 							<p></p>
 						</div>
 					</section>
@@ -312,13 +339,16 @@
 					</section>
 					<section>
 						<h3>unit testing</h3>
-
+						<div class="stretch">
+							<img alt="unit testing folder structure" src="img/test_structure.png"/>
+							<p></p>
+						</div>
 						<ul>
 							<li>standard unit testing at module level</li>
 						</ul>
 					</section>
 					<section>
-						<h3>live prod-like development</h3>
+						<h3>live replica production development</h3>
 						<div class="stretch">
 							<img alt="accounts as code hierarchy" src="img/account_hierarchy.png"/>
 							<p></p>
@@ -326,9 +356,12 @@
 						<ul>
 							<li>accounts as code</li>
 							<li>per user and per stage independent accounts</li>
-							<li>policy guardrails, logging and monitoring appied</li>
+							<li>policy guardrails, logging and monitoring applied</li>
 							<li>compliance testing applied</li>
 						</ul>
+					</section>
+					<section>
+						<h3>questions?</h3>
 					</section>
 				</section>
 				<section>
@@ -336,8 +369,8 @@
 						<h3>themes</h3>
 						<div>
 							<ul>
-								<li class="notlit">business and operational benefits and implications</li>
-								<li class="notlit">what is a chassis</li>
+								<li class="notlit">business and operational benefits and challenges</li>
+								<li class="notlit">chassis deep dive</li>
 								<li class="highlit">key architectural concerns</li>
 								<li class="notlit">technical demonstration</li>
 							</ul>
@@ -345,59 +378,53 @@
 					</section>
 					<section>
 						<h3>architecture driven engineering</h3>
-
+						<p>cloud native application development</p>
 						<ul>
-							<li>everything is abstracted</li>
-							<li>this is the catch</li>
-							<li>discipline required</li>
-						</ul>
-					</section>
-					<section>
-						<h3>serverless</h3>
-						<h4>driven by good architecture</h4>
-						<ul>
-							<li>good design all the way down<li>
-							<li>event driven/stateless</li>
-							<li>different type of coupling</li>
-							<li>examples</li>
-						</ul>
-					</section>
-					<section>
-						<h3>design all the way down</h3>
-						<ul>
-							<li>problem domain specification</li>
+							<li>thoughtful stakeholder engagement</li>
 							<li>domain driven design</li>
-							<li>REST(like) api's</li>
+							<li>REST(like) API's</li>
 							<li>cloud native patterns</li>
 						</ul>
 					</section>
 					<section>
-						<h3>problem domain specification</h3>
+						<h3>thoughtful stakeholder engagement</h3>
+						<p>event storming for discovery</p>
 						<div class="stretch">
 							<img alt="event storming wall in use" src="img/event_storming_wall.jpg"/>
 							<p></p>
 						</div>
-						<p>event storming for discovery</p>
-
-						<p></p>
+						<p>the MOST critical step</p>
 					</section>
 					<section>
 						<h3>domain driven design</h3>
-						<p>bounded context per chassis</p>
+						<p>one chassis ≈ aggregate </p>
 						<div class="stretch">
 							<img alt="our example problem" src="img/gCardArchitecture.png"/>
-
 						</div>
 					</section>
 					<section>
-						<h3>REST(like) api's</h3>
+						<h3>REST(like) API's</h3>
 						<div class="stretch">
 							<img alt="swagger definition for vault" src="img/swagger.png"/>
 						</div>
 					</section>
 					<section>
-						<h3>different type of coupling</h3>
+						<h3>cloud native patterns</h3>
+						<div class="stretch">
+							<img alt="patterns inside service" src="img/service%20internals_events_no.png"/>
+
+						</div>
+					</section>
+					<section>
+						<h3>cloud native patterns</h3>
+						<div class="stretch">
+							<img alt="patterns inside service" src="img/service%20internals_events.png"/>
+
+						</div>
 						<ul>
+							<li>cqrs + event sourcing key cloud first paradigm</li>
+							<li>chain events</li>
+							<li>embrace eventual consistency</li>
 						</ul>
 					</section>
 					<section>
@@ -405,16 +432,38 @@
 						<ul>
 							<li>static web app distribution</li>
 							<li>decompose a faulty monolith</li>
-							<li></li>
 						</ul>
+					</section>
+					<section>
+						<h3>static web app distribution</h3>
+						<div class="stretch">
+							<img alt="simple web distro service" src="img/CDN_arch.png"/>
+						</div>
+					</section>
+					<section>
+						<h3>decompose a faulty monolith</h3>
+						<p>before</p>
+						<div class="stretch">
+							<img alt="simple web distro service" src="img/breaking_monolyth_before.png"/>
+						</div>
+					</section>
+					<section>
+						<h3>decompose a faulty monolith</h3>
+						<p>after</p>
+						<div class="stretch">
+							<img alt="simple web distro service" src="img/breaking_monolyth_full.png"/>
+						</div>
+					</section>
+					<section>
+						<h3>questions?</h3>
 					</section>
 				</section>
 				<section>
 					<h3>themes</h3>
 					<div>
 						<ul>
-							<li class="notlit">business and operational benefits and implications</li>
-							<li class="notlit">what is a chassis</li>
+							<li class="notlit">business and operational benefits and challenges</li>
+							<li class="notlit">chassis deep dive</li>
 							<li class="notlit">key architectural concerns</li>
 							<li class="highlit">technical demonstration</li>
 						</ul>
@@ -422,9 +471,14 @@
 				</section>
 				<section>
 					<h3>takeaways</h3>
+					<ul>
+						<li>multiple orders of magnitude cost savings</li>
+						<li>declarative resources and security grant visibility and reassurance</li>
+						<li>focus on domain design and engineering discipline</li>
+					</ul>
 				</section>
 				<section>
-					<h3>q&a</h3>
+					<h3>questions?</h3>
 				</section>
 			</div>
 		</div>
