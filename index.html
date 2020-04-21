@@ -47,18 +47,26 @@
 						</span>
 					</small>
 				</section>
-				<section data-markdown>
-					### about me
-
-					- sysadmin as a child
-					- web infrastructure since late 90's
-					- payment processing since mid 2000's
-					- integration consultation since 2010
-					- cloud native architecture, eng and transformation since 2015
-					- feedback and observations in green
-
-					so im here to talk to you about the benefits of cloud native development. which for me means...
-
+				<section>
+					<h3>about me</h3>
+					<ul>
+						<li>web infrastructure since late 90's</li>
+						<li>payment processing since mid 2000's</li>
+						<li>integration consultation since 2010</li>
+						<li>cloud native architecture, eng and transformation since 2015</li>
+					</ul>
+				</section>
+				<section>
+					<h3>hypermedia tech</h3>
+					<p>pure serverless since 2016</p>
+					<p>implemented serverless solutions for</p>
+					<ul>
+						<li>enterprise organisations</li>
+						<li>businesses with PCI compliance obligations</li>
+						<li>support tools for cloud heavy businesses</li>
+						<li>refactor growing startups</li>
+					</ul>
+					<p>I've cried all the tears of early adoption</p>
 				</section>
 				<section>
 					<h3>serverless...why?</h3>
@@ -70,10 +78,14 @@
 						<li>improved security profile</li>
 					</ul>
 					<div id="left">
+						<p>cost 1 </p>
 						<p>extreme abstraction</p>
+						<p>needs a way to connect resources to functions</p>
 					</div>
 					<div id="right">
-						<p> warning - required discipline</p>
+						<p>cost 2 </p>
+						<p>architecture driven</p>
+						<p>requires discipline</p>
 					</div>
 				</section>
 				<section>
@@ -104,16 +116,17 @@
 					</div>
 				</section>
 				<section>
+					<section>
 						<h3>themes</h3>
 						<div>
 							<ul>
-								<li class="highlit">business and operational benefits and implications</li>
+								<li class="highlit">business and operational benefits and challenges</li>
 								<li class="notlit">what is a chassis</li>
 								<li class="notlit">key architectural concerns</li>
 								<li class="notlit">technical demonstration</li>
 							</ul>
 						</div>
-
+					</section>
 					<section>
 						<h3>benefits</h3>
 
@@ -154,14 +167,15 @@
 						<h3>challenges</h3>
 
 						<ul>
-							<li>horrify your friends in the enterprise DA</li>
-							<li>but dont worry, devOps and secOps will come to love you</li>
+							<li>navigating enterprise DA's is challenging</li>
+							<li>devOps and secOps will love you</li>
 							<li>enterprise doesnt like javascript</li>
 							<li>open source all the way down.</li>
 						</ul>
 					</section>
 				</section>
 				<section>
+					<section>
 					<h3>themes</h3>
 					<div>
 						<ul>
@@ -171,6 +185,7 @@
 							<li class="notlit">technical demonstration</li>
 						</ul>
 					</div>
+					</section>
 					<section>
 
 						<h3>deployment chasis - what and why?</h3>
@@ -189,11 +204,20 @@
 						<h3>Arranging code, configuration and resources</h3>
 
 						<ul>
+							<li>functions</li>
 							<li>resources</li>
 							<li>configuration</li>
-							<li>functions</li>
 							<li>deployment tools</li>
 						</ul>
+					</section>
+					<section>
+						<h3>functions</h3>
+
+						<div class="stretch">
+							<p>example: http event handler</p>
+							<img src="img/function.png"/>
+							<p></p>
+						</div>
 					</section>
 					<section>
 						<h3>resources</h3>
@@ -203,25 +227,70 @@
 							<li>represent platform software components</li>
 							<li>granular policy based access</li>
 						</ul>
+						<div class="stretch">
+							<p>example: table defintion</p>
+							<img src="img/tableDef.png"/>
+							<p></p>
+						</div>
 					</section>
 					<section>
 						<h3>configuration</h3>
 
 						<ul>
-							<li>the glue - serverless.yml</li>
+							<li>serverless.yml - the glue</li>
 							<li>environment configuration</li>
 							<li>populating environment configuration</li>
 						</ul>
 					</section>
 					<section>
+						<h3>serverless.yml - the glue</h3>
+						<!--- todo: add diagram combining resources and functions ---!>
+					</section>
+					<section>
+						<h3>environment configuration</h3>
+						<div class="stretch">
+							<img src="img/envSpec_smol.png"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>populating environment configuration</h3>
+						<div class="stretch">
+							<img src="img/envSpec_smol.png"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
 						<h3>deployment tools</h3>
 
 						<ul>
-							<li>packager: webpack or parcel</li>
+							<li>packager: serverless + webpack or parcel</li>
 							<li>script engine: npm</li>
-							<li>deployment tool: circle</li>
+							<li>deployment pipeline: circle</li>
 						</ul>
 						<p>all js and yaml</p>
+					</section>
+					<section>
+						<h3>serverless + webpack or parcel</h3>
+						<div class="stretch">
+							<img src="img/"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>script engine: npm</h3>
+						<div class="stretch">
+							<img src="img/envSpec_smol.png"/>
+							<p></p>
+						</div>
+					</section>
+					<section>
+						<h3>deployment pipeline</h3>
+						<div class="stretch">
+							<p>circle ci configuration</p>
+							<img alt="circle ci config yaml" src="img/circle_conf2.png"/>
+							<p></p>
+						</div>
 					</section>
 					<section>
 						<h3>debug and test</h3>
@@ -242,17 +311,20 @@
 						</ul>
 					</section>
 					<section>
-						<h3>unit testing and tracing</h3>
+						<h3>unit testing</h3>
 
 						<ul>
 							<li>standard unit testing at module level</li>
-							<li>tracing and observability</li>
 						</ul>
 					</section>
 					<section>
-						<h3>live account development</h3>
-
+						<h3>live prod-like development</h3>
+						<div class="stretch">
+							<img alt="accounts as code hierarchy" src="img/account_hierarchy.png"/>
+							<p></p>
+						</div>
 						<ul>
+							<li>accounts as code</li>
 							<li>per user and per stage independent accounts</li>
 							<li>policy guardrails, logging and monitoring appied</li>
 							<li>compliance testing applied</li>
@@ -260,15 +332,17 @@
 					</section>
 				</section>
 				<section>
-					<h3>themes</h3>
-					<div>
-						<ul>
-							<li class="notlit">business and operational benefits and implications</li>
-							<li class="notlit">what is a chassis</li>
-							<li class="highlit">key architectural concerns</li>
-							<li class="notlit">technical demonstration</li>
-						</ul>
-					</div>
+					<section>
+						<h3>themes</h3>
+						<div>
+							<ul>
+								<li class="notlit">business and operational benefits and implications</li>
+								<li class="notlit">what is a chassis</li>
+								<li class="highlit">key architectural concerns</li>
+								<li class="notlit">technical demonstration</li>
+							</ul>
+						</div>
+					</section>
 					<section>
 						<h3>architecture driven engineering</h3>
 
@@ -285,28 +359,41 @@
 							<li>good design all the way down<li>
 							<li>event driven/stateless</li>
 							<li>different type of coupling</li>
-							<li>exmaples</li>
+							<li>examples</li>
 						</ul>
 					</section>
 					<section>
 						<h3>design all the way down</h3>
 						<ul>
-							<li>discovery: event storming</li>
+							<li>problem domain specification</li>
 							<li>domain driven design</li>
 							<li>REST(like) api's</li>
 							<li>cloud native patterns</li>
 						</ul>
 					</section>
 					<section>
-						<h3>event driven</h3>
-						<ul>
-						</ul>
-						<p>user feedback</p>
+						<h3>problem domain specification</h3>
+						<div class="stretch">
+							<img alt="event storming wall in use" src="img/event_storming_wall.jpg"/>
+							<p></p>
+						</div>
+						<p>event storming for discovery</p>
+
+						<p></p>
 					</section>
 					<section>
-						<h3>stateless</h3>
-						<ul>
-						</ul>
+						<h3>domain driven design</h3>
+						<p>bounded context per chassis</p>
+						<div class="stretch">
+							<img alt="our example problem" src="img/gCardArchitecture.png"/>
+
+						</div>
+					</section>
+					<section>
+						<h3>REST(like) api's</h3>
+						<div class="stretch">
+							<img alt="swagger definition for vault" src="img/swagger.png"/>
+						</div>
 					</section>
 					<section>
 						<h3>different type of coupling</h3>
