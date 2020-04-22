@@ -31,7 +31,6 @@
 					</h3>
 					<p style="font-size: 0.85em">
 						benefits of native serverless application development
-						<br><small>chassis and architecture driven engineering</small>
 						<br><br><br>
 					</p>
 					<small class="footnote">
@@ -55,21 +54,45 @@
 						<li>integration consultation since 2010</li>
 						<li>cloud native architecture, eng and transformation since 2015</li>
 					</ul>
+					<p class="fragment"> so the question is...why serverless?</p>
+				</section>
+				<section>
+					<h3>first experience of serverless</h3>
+					<p>3d render of person from two images</p>
+					<div class="stretch">
+						<img src="img/renderFarm.png"/>
+					</div>
+					<ul style="font-size: 30px">
+						<li class="fragment"> each render takes 120 seconds</li>
+						<li class="fragment"> each render costs $2.99AUD</li>
+						<li class="fragment">two giant clusters running at approximately 40% utilization</li>
+					</ul>
+				</section>
+				<section>
+					<h3>first experience of serverless</h3>
+					<p>3d render of person from two images</p>
+					<div class="stretch">
+						<img src="img/renderingPerson.png"/>
+					</div>
+					<ul style="font-size: 30px">
+						<li class="fragment">10,000 renders in 55 seconds</li>
+						<li class="fragment"> each render cost $0.001USD</li>
+						<li class="fragment">storage costs ≈ $0.50 per GB</li>
+					</ul>
 				</section>
 				<section>
 					<h3>hypermedia tech</h3>
 					<p>pure serverless since 2016</p>
 					<p>implemented serverless solutions for</p>
-					<ul>
-						<li>enterprise organisations</li>
+					<ul style="font-size: 30px">
+						<li>international and national enterprise</li>
 						<li>businesses with PCI compliance obligations</li>
 						<li>support tools for cloud heavy businesses</li>
 						<li>refactor growing startups</li>
 					</ul>
-					<p>I've cried all the tears of early adoption</p>
 				</section>
 				<section>
-					<h3>serverless...why?</h3>
+					<h3>why use serverless?</h3>
 
 					<p>mastery of serverless workoads give you:</p>
 					<ul>
@@ -77,16 +100,21 @@
 						<li>insanely low operational overhead</li>
 						<li>improved security profile</li>
 					</ul>
-					<div id="left">
-						<p>cost 1 </p>
-						<p>extreme abstraction</p>
-						<p>needs a way to connect resources to functions</p>
-					</div>
-					<div id="right">
-						<p>cost 2 </p>
-						<p>architecture driven</p>
-						<p>requires discipline</p>
-					</div>
+				</section>
+				<section>
+					<h3>whats the catch?</h3>
+
+					<ul style="font-size: 30px">
+						<li>extreme abstraction -needs a way to connect resources to functions</li>
+						<li>emergent tools and patterns available</li>
+					</ul>
+					<h4>and the solution?</h4>
+					<ul>
+						<li>deployment chassis driven development</li>
+						<li>architectural discipline</li>
+					</ul>
+
+
 				</section>
 				<section>
 					<h3>themes</h3>
@@ -205,9 +233,6 @@
 							<li>open source all the way down.</li>
 						</ul>
 					</section>
-					<section>
-						<h3>questions</h3>
-					</section>
 				</section>
 				<section>
 					<section>
@@ -223,16 +248,15 @@
 					</section>
 					<section>
 
-						<h3>deployment chasis - what and why?</h3>
+						<h3>deployment chasis deep dive</h3>
 
 
-						the deployment chassis answers the following questions
+						<p>the deployment chassis answers the following questions</p>
 
 						<ul>
 							<li>how do we arrange code, config and resources?</li>
 							<li>how do we apply developer tools?</li>
 							<li>how do we enable integration and deployment workflows?</li>
-							<li>debug and test</li>
 						</ul>
 					</section>
 					<section>
@@ -318,17 +342,9 @@
 					<section>
 						<h3>script engine: npm</h3>
 						<div class="stretch">
-							<img src="img/envSpec_smol.png"/>
+							<img alt="list of npm scripts from package dot json" src="img/scripts.png"/>
 							<p></p>
 						</div>
-					</section>
-					<section>
-						<h3>deployment pipeline</h3>
-						<div class="stretch">
-							<img alt="circle ci workflow" src="img/circleWorkflow.png"/>
-							<p>same approach available from most CI services</p>
-						</div>
-
 					</section>
 					<section>
 						<h3>deployment pipeline</h3>
@@ -339,31 +355,21 @@
 						</div>
 					</section>
 					<section>
+						<h3>deployment pipeline</h3>
+						<p>workflow</p>
+						<div class="stretch">
+							<img alt="circle ci workflow" src="img/circleWorkflow.png"/>
+							<p>same approach available from most CI services</p>
+						</div>
+					</section>
+					<section>
 						<h3>debug and test</h3>
 
 						<ul>
-							<li>cloud dogfood: use platform tools</li>
-							<li>unit testing and tracing</li>
 							<li>live replica per developer</li>
-						</ul>
-					</section>
-					<section>
-						<h3>cloudfood : use platform tools</h3>
+							<li>cloudfood: use platform tools</li>
+							<li>unit testing and tracing</li>
 
-						<ul>
-							<li>dashbird</li>
-							<li>cloud provider monitoring tools</li>
-							<li>advanced tracing - honecomb.io</li>
-						</ul>
-					</section>
-					<section>
-						<h3>unit testing</h3>
-						<div class="stretch">
-							<img alt="unit testing folder structure" src="img/test_structure.png"/>
-							<p></p>
-						</div>
-						<ul>
-							<li>standard unit testing at module level</li>
 						</ul>
 					</section>
 					<section>
@@ -380,7 +386,23 @@
 						</ul>
 					</section>
 					<section>
-						<h3>questions?</h3>
+						<h3>cloudfood : use platform tools</h3>
+
+						<ul>
+							<li>cloud provider monitoring tools</li>
+							<li>dashbird</li>
+							<li>advanced tracing - honeycomb.io</li>
+						</ul>
+					</section>
+					<section>
+						<h3>unit testing</h3>
+						<div class="stretch">
+							<img alt="unit testing folder structure" src="img/test_structure.png"/>
+							<p></p>
+						</div>
+						<ul>
+							<li>standard unit testing at module level</li>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -447,20 +469,16 @@
 						</ul>
 					</section>
 					<section>
-						<h3>use cases / examples</h3>
+						<h3>use cases</h3>
 						<ul>
-							<li>static web app distribution</li>
-							<li>decompose a faulty monolith</li>
+							<li>decompose monoliths</li>
+							<li>web apps or web apis</li>
+							<li>data or image processing</li>
+							<li>any event oriented workflow</li>
 						</ul>
 					</section>
 					<section>
-						<h3>static web app distribution</h3>
-						<div class="stretch">
-							<img alt="simple web distro service" src="img/CDN_arch.png"/>
-						</div>
-					</section>
-					<section>
-						<h3>decompose a faulty monolith</h3>
+						<h3>use case - decompose a faulty monolith</h3>
 						<p>before</p>
 						<div class="stretch">
 							<img alt="simple web distro service" src="img/breaking_monolyth_before.png"/>
@@ -472,9 +490,6 @@
 						<div class="stretch">
 							<img alt="simple web distro service" src="img/breaking_monolyth_full.png"/>
 						</div>
-					</section>
-					<section>
-						<h3>questions?</h3>
 					</section>
 				</section>
 				<section>
@@ -497,7 +512,22 @@
 					</ul>
 				</section>
 				<section>
-					<h3>questions?</h3>
+					<h3>thank you!</h3>
+					<br>
+					<h4>any questions?</h4>
+
+					<small class="footnote">
+						<p>
+							Slides: <a href="http://webconf2020.groklobster.io">webconf2020.groklobster.io</a> |
+							<span>
+								slide source <a href="https://github.com/delprofundo/webconf2020pres">bit.ly/w3c-pres</a>
+							</span>
+						</p>
+						serverless chassis: <a href="https://github.com/delprofundo/serverless_chassis"> bit.ly/js-chassis </a> |
+						<span>
+							contact me: <a href="mailto:bruno@hypermedia.tech">bruno@hypermedia.tech</a>
+						</span>
+					</small>
 				</section>
 			</div>
 		</div>
